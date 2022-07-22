@@ -10,3 +10,10 @@ class LinkActionView(View):
         context = {}
         context['urltag'] = 'Nothing to display'
         return render(request, self.template_name, context)
+
+class ReadAllProducts(View):
+    template_name = "ReadAllProducts_page.html"
+    def get(self, request, *args, **kwargs):
+        context = {}
+        context['urltag'] = 'Nothing to display'
+        return render(request, self.template_name, context)
