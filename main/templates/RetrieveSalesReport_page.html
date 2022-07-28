@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <form method="post"> {% csrf_token %}
+            <div class="form-group">
+            <H1>Sales Report</H1>
+            <hr/>
+          </div>
+          <div class="form-group">
+            <label>Url Address</label>
+            <input type="url" class="form-control" id="urltext" name="urltext" aria-describedby="eurltextHelp" placeholder="Enter Url">
+          </div>
+          <div class="form-group">
+            <label>Consumer Key</label>
+            <input type="text" class="form-control" id="Consumer_Key" name="Consumer_Key" aria-describedby="urltagHelp" placeholder="Enter Consumer Key">
+          </div>
+          <div class="form-group">
+            <label>Consumer Secret</label>
+            <input type="text" class="form-control" id="Consumer_Secret" name="Consumer_Secret" aria-describedby="urltagHelp" placeholder="Enter Consumer Secret">
+          </div>
+          <input type="submit" class="btn btn-primary" value="Get All Proudcts" >
+        </form>
+        <div class="row">
+            <p>
+                {{ urltag }}
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

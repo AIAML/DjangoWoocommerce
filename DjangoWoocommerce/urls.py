@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import LinkActionView,ReadAllProductsView,ReadAllProductsAttributesView,ReadAllCategoriesView,ReadAllTagsView
+from main.views import LinkActionView,ReadAllProductsView,ReadAllProductsAttributesView,ReadAllCategoriesView,ReadAllTagsView,ReadAllReviewView\
+    ,RetrieveSalesReportView
 from django.conf.urls import url
 
 urlpatterns = [
@@ -26,11 +27,17 @@ urlpatterns = [
     path('ReadAllCategories/', ReadAllCategoriesView.as_view(),name='ReadAllCategories'),
     path('ReadAllCategories/', ReadAllCategoriesView.as_view(),name='ReadAllCategories'),
     path('ReadAllTags/', ReadAllTagsView.as_view(),name='ReadAllTags'),
+    path('ReadAllReview/', ReadAllReviewView.as_view(),name='ReadAllReview'),
+    path('RetrieveSalesReport/', RetrieveSalesReportView.as_view(),name='RetrieveSalesReport'),
+
+
 
     url(r'^Home/$', LinkActionView.as_view(), name='home'),
     url(r'^ReadAllProducts/$', ReadAllProductsView.as_view(), name='ReadAllProducts'),
     url(r'^ReadAllProductsAttributes/$', ReadAllProductsAttributesView.as_view(), name='ReadAllProductsAttributes'),
     url(r'^ReadAllCategories/$', ReadAllCategoriesView.as_view(), name='ReadAllCategories'),
     url(r'^ReadAllTags/$', ReadAllTagsView.as_view(), name='ReadAllTags'),
+    url(r'^ReadAllReview/$', ReadAllReviewView.as_view(), name='ReadAllReview'),
+    url(r'^RetrieveSalesReport/$', RetrieveSalesReportView.as_view(), name='RetrieveSalesReport'),
 
 ]
