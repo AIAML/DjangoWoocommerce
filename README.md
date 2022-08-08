@@ -4,7 +4,13 @@ This Project is web-based sample for using wordpress api in order to manage your
 
 
 ```bash
-pip install woocommerce'''
+pip install woocommerce 
+
+```
+
+```python
+import foobar
+```
 
 ## How to activate your api
 
