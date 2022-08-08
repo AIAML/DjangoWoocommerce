@@ -8,9 +8,6 @@ pip install woocommerce
 
 ```
 
-```python
-import foobar
-```
 
 ## How to activate your api
 
