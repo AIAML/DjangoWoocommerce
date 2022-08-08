@@ -11,4 +11,4 @@ pip install woocommerce
 
 ## How to activate your api
 
-In order to use this web application activate api keys in your wordpress site which is located in your woocomere setting section.
+In order to use this web application activate api keys in your wordpress site which is located in your woocommerce setting section.
